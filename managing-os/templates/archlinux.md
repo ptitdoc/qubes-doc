@@ -20,12 +20,26 @@ Main maintainer of this template is [Olivier Médoc](mailto:o_medoc@yahoo.fr).
 
 <br>
 
-## Instructions ##
+## Install Templates
 
 <br>
-**These are the instructions for Qubes 3.2. They will take you step by step through the entire process start to finish**
+**These are the instructions for Qubes 3.2.
 
-*Note: Currently there are no binary packages and it must be compiled from source using the instructions below.*
+Launch the `dom0` terminal `Konsole` from your Qubes App Launcher. Then enter the following command to install the Archlinux community TemplateVMs.
+
+~~~
+sudo qubes-dom0-update --enablerepo=qubes-templates-community qubes-template-archlinux
+~~~
+
+Download will take a while and there will be no progress indicator.
+
+After doing this, you should see a new TemplateVMs in the VM Manager called `archlinux`
+
+
+## Quick Building Instruction
+
+<br>
+**These are the instructions for building archlinux template from Qubes 3.2 sources. They will take you step by step through the entire process start to finish**
 
 <br>
 <br>
@@ -372,8 +386,6 @@ Main maintainer of this template is [Olivier Médoc](mailto:o_medoc@yahoo.fr).
 
 ## **Package Manager Proxy Setup Section** ##
 
-
-One last thing to setup to have a "PROPERLY" functioning archlinux template.
 
 Archlinux package manager Pacman is  a fine package mangers except that we could not find a way to configure it to use the Qubes Update Proxy Service (QUPS) that would comply with Qubes QUPS usage policy.
 
